@@ -4,4 +4,5 @@ from . import views  # Импортируем views из текущего при
 
 urlpatterns = [
     path('', views.index, name='index'),  # Главная страница
+    path('', views.map_view, name='map_view'),
 ]

@@ -21,16 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     themeToggle.addEventListener('click', toggleTheme);
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
     // Active navigation highlight
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-links a');

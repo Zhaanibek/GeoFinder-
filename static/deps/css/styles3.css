@@ -165,7 +165,11 @@
   #about {
     padding: 8rem 5%;
   }
-  
+
+  #about h2 {
+    text-align: center;
+  }
+
   .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -207,7 +211,12 @@
     padding: 8rem 5%;
     background: linear-gradient(135deg, rgba(124, 58, 237, 0.03), rgba(79, 70, 229, 0.03));
   }
-  
+
+  #analysis h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   .analysis-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -269,19 +278,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Высота секции на весь экран */
-    padding: 0; /* Убираем отступы */
+    padding: 8rem 5%; /* Убираем отступы */
     margin: 0;
     text-align: center; /* Центрируем текст */
-    background-color: #121212; /* Темный фон для наглядности */
   }
   
   #faq h2 {
-    margin: 0; /* Убираем внешние отступы */
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white; /* Цвет текста */
+    margin: 0 !important;
+    font-size: 2.5rem !important;
+    text-align: center !important;
   }
+  
   
   .faq-container {
     width: 100%;
@@ -321,6 +328,12 @@
     padding: 8rem 5%;
     background: linear-gradient(135deg, rgba(124, 58, 237, 0.03), rgba(79, 70, 229, 0.03));
   }
+
+  #contact h2 {
+    margin-bottom: 2rem; 
+    font-size: 2.5rem !important;
+    text-align: center !important;
+  }
   
   .contact-container {
     display: grid;
@@ -328,6 +341,7 @@
     gap: 3rem;
     background: var(--card-bg);
     padding: 3rem;
+    margin-top: 2rem;
     border-radius: 20px;
     box-shadow: 0 4px 6px var(--card-shadow);
     max-width: 1000px;
@@ -476,3 +490,39 @@
     animation: fadeIn 0.6s ease-out forwards;
   }
 
+  .analysis-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+#map {
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.analysis-results {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.location-card {
+    background: var(--bg-secondary);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.location-card h4 {
+    margin: 0 0 10px 0;
+    color: var(--text-primary);
+}
+
+.location-card p {
+    margin: 5px 0;
+    color: var(--text-secondary);
+}
