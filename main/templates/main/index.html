@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoFinder - поиск лучших мест</title>
+    <link rel="stylesheet" href="static/deps/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <nav>
+        <div class="logo">GeoFinder</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Главная</a></li>
+            <li><a href="#about">О проекте</a></li>
+            <li><a href="#analysis">Анализ</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Поиск лучших мест для магазина</h1>
+            <p>Найдите лучшее место для вашего магазина</p>
+            <a href="#analysis" class="cta-button">Начать анализ</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>О проекте</h2>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>ИИ технологии</h3>
+                <p>Используем передовые алгоритмы машинного обучения для точного определения лучшего места</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Быстрый анализ</h3>
+                <p>Мгновенная обработка данных и получение результатов за считанные секунды</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Точность</h3>
+                <p>Высокая точность распознавания мест благодаря современным нейронным сетям</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="analysis">
+        <h2>MAP</h2>
+        <div class="analysis-container">
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Как работает поиск лучшего места?</div>
+                <div class="faq-answer">Наша система использует современные алгоритмы машинного обучения для анализа и определения лучших мест.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">В каких городах работает система?</div>
+                <div class="faq-answer">На данный момент система работает в Алмате. При наличии данных из других городов можно легко добавить и другие города.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Безопасны ли данные?</div>
+                <div class="faq-answer">Да, все загруженные данные взяты из открытых источников и обрабатываются локально в вашем браузере и не сохраняются на наших серверах. Мы уделяем особое внимание конфиденциальности ваших данных.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Свяжитесь с нами</h2>
+        <div class="contact-container">
+            <form id="contactForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
+            <div class="contact-info">
+                <div><i class="fas fa-envelope"></i> slamzhan.z.b@gmail.com</div>
+                <div><i class="fas fa-phone"></i> +7 (700) 265-30-51</div>
+                <div><i class="fas fa-map-marker-alt"></i> Алматы, Қазақстан</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">GeoFinder</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GeoFinder. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="static/deps/js/main.js"></script>
+</body>
+</html>
