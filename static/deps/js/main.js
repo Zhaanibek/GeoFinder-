@@ -71,3 +71,44 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.reset();
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filtersForm = document.getElementById('filtersForm');
+
+    filtersForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(filtersForm);
+        const params = new URLSearchParams(formData).toString();
+
+        fetch(`?${params}`, {
+            method: 'GET',
+            headers: { 'X-Requested-With': 'XMLHttpRequest' },
+        })
+            .then(response => response.text())
+            .then(html => {
+                // Обновляем только секцию с анализом
+                const analysisSection = document.querySelector('#analysis');
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const newContent = doc.querySelector('#analysis');
+                if (analysisSection && newContent) {
+                    analysisSection.innerHTML = newContent.innerHTML;
+                }
+                // Обновляем URL в браузере
+                history.pushState(null, '', `?${params}`);
+            })
+            .catch(error => console.error('Ошибка при обновлении фильтров:', error));
+    });
+});
+
+document.addEventListener('scroll', function () {
+    localStorage.setItem('scrollPosition', window.scrollY);
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollPosition = localStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        window.scrollTo(0, parseInt(scrollPosition, 10));
+    }
+});
