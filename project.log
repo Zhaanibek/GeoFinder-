@@ -268,3 +268,28 @@ INFO 2024-12-09 00:16:03,701 basehttp "GET / HTTP/1.1" 200 4020470
 INFO 2024-12-09 00:16:03,789 basehttp "GET /static/deps/js/main.js HTTP/1.1" 304 0
 INFO 2024-12-09 00:19:11,436 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
 INFO 2024-12-09 00:19:13,495 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:24:31,985 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:24:44,369 basehttp "GET / HTTP/1.1" 200 3653563
+INFO 2024-12-09 00:28:08,143 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 00:28:10,636 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:28:14,360 basehttp "GET / HTTP/1.1" 200 6069
+INFO 2024-12-09 00:28:14,376 basehttp "GET /static/deps/js/main.js HTTP/1.1" 304 0
+INFO 2024-12-09 00:28:27,249 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 00:28:30,992 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:28:42,260 basehttp "GET / HTTP/1.1" 200 4020134
+INFO 2024-12-09 00:29:17,009 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 00:29:18,972 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:29:37,751 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 00:29:39,703 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:29:54,570 basehttp "GET / HTTP/1.1" 200 4020871
+INFO 2024-12-09 00:30:19,302 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 00:30:21,109 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:30:28,332 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 00:30:30,105 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:30:33,143 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 00:30:35,106 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:30:48,887 basehttp "GET / HTTP/1.1" 200 4020233
+INFO 2024-12-09 00:31:56,879 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:32:09,177 basehttp "GET / HTTP/1.1" 200 4020679
+INFO 2024-12-09 00:32:09,210 basehttp "GET /static/deps/css/styles3.css HTTP/1.1" 304 0
+INFO 2024-12-09 00:32:42,456 basehttp "GET / HTTP/1.1" 200 4021082
