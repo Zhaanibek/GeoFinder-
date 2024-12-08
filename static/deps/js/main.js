@@ -149,4 +149,89 @@ function initMap(locations = []) {
 }
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const filtersForm = document.getElementById('filtersForm');
+    
+    if (filtersForm) {
+        filtersForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            updateMap();
+        });
 
+        // Добавляем обработчик изменения чекбокса
+        const top5Checkbox = document.getElementById('top5Checkbox');
+        if (top5Checkbox) {
+            top5Checkbox.addEventListener('change', function() {
+                updateMap();
+            });
+        }
+
+        // Добавляем обработчик изменения выбора района
+        const districtSelect = document.getElementById('district');
+        if (districtSelect) {
+            districtSelect.addEventListener('change', function() {
+                updateMap();
+            });
+        }
+    }
+
+    function updateMap() {
+        const formData = new FormData(filtersForm);
+        const params = new URLSearchParams(formData).toString();
+
+        // Показываем индикатор загрузки
+        const mapContainer = document.getElementById('map-container');
+        mapContainer.innerHTML = '<div class="flex items-center justify-center h-full"><div class="animate-spin rounded-full h-32 w-32 border-b-2 border-indigo-500"></div></div>';
+
+        fetch(`?${params}`, {
+            method: 'GET',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+        })
+        .then(response => response.text())
+        .then(html => {
+            // Обновляем содержимое контейнера карты
+            mapContainer.innerHTML = html;
+            
+            // Обновляем URL без перезагрузки страницы
+            history.pushState(null, '', `?${params}`);
+        })
+        .catch(error => {
+            console.error('Ошибка при обновлении карты:', error);
+            mapContainer.innerHTML = '<div class="text-red-500 p-4">Произошла ошибка при загрузке карты</div>';
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filtersForm = document.getElementById('filtersForm');
+
+    filtersForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const formData = new FormData(filtersForm);
+        const params = new URLSearchParams(formData).toString();
+
+        fetch(`?${params}`, {
+            method: 'GET',
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
+            },
+        })
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const newContent = doc.querySelector('#map-container');
+                const mapContainer = document.querySelector('#map-container');
+                mapContainer.innerHTML = newContent.innerHTML;
+
+                history.pushState(null, '', `?${params}`);
+            })
+            .catch(error => console.error('Ошибка при обновлении карты:', error));
+    });
+});
+
+
+const formData = new FormData(filtersForm);
+formData.set('top_only', document.querySelector('input[name="top_only"]').checked ? 'true' : 'false');

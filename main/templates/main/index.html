@@ -58,40 +58,12 @@
     
 
     <section id="analysis">
-        <h2>Анализ местоположений</h2>
-        <div class="dropdown">
-            <button 
-                class="btn btn-secondary dropdown-toggle" 
-                type="button" 
-                id="filtersButton" 
-                data-bs-toggle="dropdown" 
-                aria-expanded="false">
-                Фильтры
-            </button>
-            <form id="filtersForm" class="dropdown-menu p-4">
-                <div class="form-check">
-                    <input 
-                        class="form-check-input" 
-                        type="checkbox" 
-                        name="top_only" 
-                        id="filterTopOnly" 
-                        value="true" 
-                        {% if top_only == 'true' %}checked{% endif %}>
-                    <label class="form-check-label" for="filterTopOnly">
-                        Только топовые места
-                    </label>
-                </div>
-                <label for="filterDistrict" class="form-label mt-2">Район:</label>
-                <select name="district" id="filterDistrict" class="form-select">
-                    {% for d in districts %}
-                    <option value="{{ d }}" {% if current_district == d %}selected{% endif %}>{{ d }}</option>
-                    {% endfor %}
-                </select>
-                <button type="submit" class="btn btn-primary mt-3">Применить</button>
-            </form>
-        </div>         
-        
-        {{ graph_html|safe }}
+        <h2>Рекомендации по местам для открытия магазина</h2>
+        <div id="map-container">
+            {{ graph_html|safe }}
+        </div>
+        <p>{{ gemini_analysis }}</p>
+
     </section>
 
     <section id="faq">
