@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeoFinder - поиск лучших мест</title>
+    <link rel="stylesheet" href={% static "deps/css/bootstrap/bootstrap.min.css" %}>
     <link rel="stylesheet" href="{% static 'deps/css/styles3.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -58,26 +59,38 @@
 
     <section id="analysis">
         <h2>Анализ местоположений</h2>
-        <div class="dropdown mb-2">
-            <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" id="filtersButton" aria-expanded="false">
+        <div class="dropdown">
+            <button 
+                class="btn btn-secondary dropdown-toggle" 
+                type="button" 
+                id="filtersButton" 
+                data-bs-toggle="dropdown" 
+                aria-expanded="false">
                 Фильтры
             </button>
-            <form id="filtersForm" class="dropdown-menu bg-dark" data-bs-theme="dark">
-                <div class="form-check text-white mx-3">
-                    <input class="form-check-input" type="checkbox" name="top_only" id="filterTopOnly" value="true" {% if top_only == 'true' %}checked{% endif %}>
+            <form id="filtersForm" class="dropdown-menu p-4">
+                <div class="form-check">
+                    <input 
+                        class="form-check-input" 
+                        type="checkbox" 
+                        name="top_only" 
+                        id="filterTopOnly" 
+                        value="true" 
+                        {% if top_only == 'true' %}checked{% endif %}>
                     <label class="form-check-label" for="filterTopOnly">
                         Только топовые места
                     </label>
                 </div>
-                <p class="text-white mx-3 mt-3">Район:</p>
-                <select name="district" id="filterDistrict" class="form-select bg-dark text-white">
+                <label for="filterDistrict" class="form-label mt-2">Район:</label>
+                <select name="district" id="filterDistrict" class="form-select">
                     {% for d in districts %}
                     <option value="{{ d }}" {% if current_district == d %}selected{% endif %}>{{ d }}</option>
                     {% endfor %}
                 </select>
-                <button type="submit" class="btn btn-primary mx-3 mt-3">Применить</button>
+                <button type="submit" class="btn btn-primary mt-3">Применить</button>
             </form>
-        </div>
+        </div>         
+        
         {{ graph_html|safe }}
     </section>
 
@@ -130,7 +143,8 @@
             <p>&copy; 2024 GeoFinder. Все права защищены.</p>
         </div>
     </footer>
-
+    <script src={% static "deps/js/jquery/jquery-3.7.0.min.js" %}></script>
+    <script src={% static "deps/js/bootstrap/bootstrap.bundle.min.js" %}></script>
     <script src="{% static 'deps/js/main.js' %}"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 

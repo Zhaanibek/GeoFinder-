@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
     // Contact Form
     const contactForm = document.getElementById('contactForm');
     contactForm.addEventListener('submit', (e) => {
@@ -102,13 +101,52 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('scroll', function () {
-    localStorage.setItem('scrollPosition', window.scrollY);
-});
-
 document.addEventListener('DOMContentLoaded', function () {
-    const scrollPosition = localStorage.getItem('scrollPosition');
-    if (scrollPosition) {
-        window.scrollTo(0, parseInt(scrollPosition, 10));
+    if (typeof initMap === 'function') {
+        initMap();
+    } else {
+        console.error('Функция initMap не найдена.');
     }
 });
+
+document.getElementById('top5Checkbox').addEventListener('change', function () {
+    const isChecked = this.checked;
+
+    // Получить данные для карты (например, из скрытых элементов)
+    const allLocations = JSON.parse(document.getElementById('map-data').textContent || '[]');
+    const filteredLocations = isChecked ? allLocations.slice(0, 5) : allLocations;
+
+    if (typeof initMap === 'function') {
+        initMap(filteredLocations);
+    }
+});
+
+function initMap(locations = []) {
+    // Убедитесь, что контейнер для карты существует
+    const mapContainer = document.getElementById('map');
+    if (!mapContainer) {
+        console.error('Контейнер карты не найден.');
+        return;
+    }
+
+    // Очищаем предыдущую карту (если нужно)
+    mapContainer.innerHTML = '';
+
+    // Инициализация карты (пример для Google Maps)
+    const map = new google.maps.Map(mapContainer, {
+        zoom: 12,
+        center: { lat: locations[0]?.latitude || 0, lng: locations[0]?.longitude || 0 },
+    });
+
+    // Добавляем метки
+    locations.forEach(location => {
+        new google.maps.Marker({
+            position: { lat: location.latitude, lng: location.longitude },
+            map: map,
+            title: location.name,
+        });
+    });
+}
+
+
+

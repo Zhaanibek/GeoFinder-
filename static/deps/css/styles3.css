@@ -526,3 +526,102 @@
     margin: 5px 0;
     color: var(--text-secondary);
 }
+
+/* Общий стиль для выпадающего меню */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Кнопка открытия фильтров */
+.dropdown-toggle {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: #555;
+}
+
+/* Стиль выпадающего меню */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  color: white;
+  min-width: 250px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Стиль чекбокса и подписи */
+.form-check {
+  margin-bottom: 15px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+  accent-color: #007bff; /* Синий цвет */
+}
+
+.form-check-label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Подпись для поля "Район" */
+.form-label {
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+/* Выпадающий список */
+.form-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  outline: none;
+}
+
+.form-select option {
+  background-color: #222;
+  color: white;
+}
+
+/* Кнопка отправки */
+.submit-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Раскрытое меню */
+.dropdown-menu.show {
+  display: block;
+}
+
