@@ -293,3 +293,127 @@ INFO 2024-12-09 00:31:56,879 autoreload Watching for file changes with StatReloa
 INFO 2024-12-09 00:32:09,177 basehttp "GET / HTTP/1.1" 200 4020679
 INFO 2024-12-09 00:32:09,210 basehttp "GET /static/deps/css/styles3.css HTTP/1.1" 304 0
 INFO 2024-12-09 00:32:42,456 basehttp "GET / HTTP/1.1" 200 4021082
+INFO 2024-12-09 00:35:04,664 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 00:35:22,459 basehttp "GET / HTTP/1.1" 200 4021385
+INFO 2024-12-09 10:11:39,930 basehttp "GET / HTTP/1.1" 200 4014821
+INFO 2024-12-09 10:11:39,993 basehttp "GET /static/deps/css/styles3.css HTTP/1.1" 304 0
+INFO 2024-12-09 10:11:40,373 basehttp "GET /static/deps/js/main.js HTTP/1.1" 304 0
+INFO 2024-12-09 10:12:14,681 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 10:12:20,673 basehttp "GET / HTTP/1.1" 200 4014821
+INFO 2024-12-09 10:13:42,997 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 10:13:56,921 basehttp "GET / HTTP/1.1" 200 4019792
+INFO 2024-12-09 10:14:46,529 basehttp "GET / HTTP/1.1" 200 4020249
+INFO 2024-12-09 10:38:42,878 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 10:38:46,883 autoreload Watching for file changes with StatReloader
+INFO 2024-12-09 10:39:01,307 basehttp "GET / HTTP/1.1" 200 4020312
+INFO 2024-12-09 10:39:10,920 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2024-12-09 10:39:13,634 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:40:36,023 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:40:54,949 basehttp "GET / HTTP/1.1" 200 4014576
+INFO 2025-01-12 19:40:55,025 basehttp "GET /static/deps/css/styles3.css HTTP/1.1" 200 13277
+INFO 2025-01-12 19:40:55,233 basehttp "GET /static/deps/js/main.js HTTP/1.1" 200 9214
+WARNING 2025-01-12 19:40:55,234 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:40:55,257 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:40:55,263 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+WARNING 2025-01-12 19:41:01,349 log Not Found: /favicon.ico
+WARNING 2025-01-12 19:41:01,349 basehttp "GET /favicon.ico HTTP/1.1" 404 2366
+INFO 2025-01-12 19:41:28,628 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:41:28,679 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:41:28,705 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:41:28,735 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:41:58,692 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:41:58,970 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:41:58,985 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:41:58,987 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:44:44,079 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:44:48,954 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:45:02,878 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:45:03,127 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:45:03,149 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+WARNING 2025-01-12 19:45:03,150 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+INFO 2025-01-12 19:45:14,179 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:45:14,223 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:45:14,249 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:45:14,278 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:47:37,349 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:47:39,680 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:47:46,252 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:47:46,495 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:47:46,498 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:47:46,507 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:47:56,376 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:47:56,478 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:47:56,627 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:47:56,627 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:48:13,382 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:48:18,363 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:48:22,787 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:48:22,836 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:48:22,896 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:48:22,897 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:49:49,144 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:49:51,311 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:49:57,948 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:50:00,132 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:50:12,335 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:50:12,534 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:50:12,591 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:50:12,592 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:50:26,307 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:50:28,672 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:50:39,642 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:50:41,842 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:51:21,917 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:51:24,299 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:51:28,631 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:51:36,143 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:51:36,216 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:51:36,275 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:51:36,275 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:53:18,622 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 19:53:20,763 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 19:53:26,422 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:53:26,507 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:53:26,519 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:53:26,538 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 19:53:35,381 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 19:53:35,626 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 19:53:35,652 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 19:53:35,658 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 20:11:13,848 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 20:11:16,598 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 20:11:55,260 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 20:11:57,455 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 20:12:12,555 basehttp "GET / HTTP/1.1" 200 4014564
+WARNING 2025-01-12 20:12:12,635 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 20:12:12,647 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 20:12:12,671 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 20:15:48,451 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 20:15:50,819 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 20:15:55,829 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 20:15:55,913 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 20:15:55,917 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 20:15:55,943 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 20:19:03,508 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-12 20:19:08,052 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 20:19:13,616 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 20:19:13,709 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 20:19:13,722 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 20:19:13,734 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-12 20:20:12,295 autoreload Watching for file changes with StatReloader
+INFO 2025-01-12 20:20:31,637 basehttp "GET / HTTP/1.1" 200 4014576
+WARNING 2025-01-12 20:20:31,724 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-12 20:20:31,730 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-12 20:20:31,757 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-13 00:14:02,700 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-13 00:14:07,316 autoreload Watching for file changes with StatReloader
+INFO 2025-01-13 00:14:21,280 basehttp "GET / HTTP/1.1" 200 4020964
+WARNING 2025-01-13 00:14:21,466 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-13 00:14:21,473 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-13 00:14:21,534 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937
+INFO 2025-01-13 00:14:42,440 autoreload C:\Users\ZhanibekSB\WorkplaceVS\HackaAstanaDjEnv\main\views.py changed, reloading.
+INFO 2025-01-13 00:14:44,625 autoreload Watching for file changes with StatReloader
+INFO 2025-01-13 00:19:03,540 basehttp "GET / HTTP/1.1" 200 4020342
+WARNING 2025-01-13 00:19:03,673 basehttp "GET /static/deps/css/bootstrap/bootstrap.min.css HTTP/1.1" 404 1922
+WARNING 2025-01-13 00:19:03,736 basehttp "GET /static/deps/js/jquery/jquery-3.7.0.min.js HTTP/1.1" 404 1916
+WARNING 2025-01-13 00:19:03,790 basehttp "GET /static/deps/js/bootstrap/bootstrap.bundle.min.js HTTP/1.1" 404 1937

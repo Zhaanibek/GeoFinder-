@@ -120,7 +120,7 @@ def fetch_gemini_analysis(data):
     Returns:
         tuple: (анализ, отладочная информация)
     """
-    api_key = "AIzaSyCiTNGZ_RtRfoBZrRSEnkXQSXwinciRpts"
+    api_key = "AIzaSyCJwTwqaoRKY08fpbUxpoIdC3n93TKwQxk"
     gemini_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key={api_key}"
 
     locations_description = "\n".join(
@@ -140,7 +140,7 @@ def fetch_gemini_analysis(data):
     "Также, если клиент решит открыть магазин в одном из этих мест, он может сэкономить значительную сумму. "
     "Для оценки экономии используйте информацию о плотности магазинов и рейтинге соседей, а также учитывайте, "
     "что магазин с высокой выигрышностью может привлечь больше клиентов, снизив затраты на маркетинг и увеличив продажи."
-    "Всегда возвращайте названия магазинов с адресами и их выигрышность в процентах(Макс выиграшность деля на 100%)"
+    "Всегда возвращайте названия магазинов с адресами и их выигрышность в процентах(Макс выиграшность для на 100%)"
     )
 
 
